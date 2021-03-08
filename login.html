@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Redirecionamento</title>
+    <style>
+        body {
+    font-family: "Lato", sans-serif;
+}
+
+
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #444494;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 20%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #5442f5 !important;
+    color: #fff;
+}
+.logo{
+    margin-top: 5%;
+}
+.voltei{
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="sidenav">
+         <div class="login-main-text">
+            <h2>Redirecionamento<br> Pagina de login</h2>
+            <p>Este ambiente é destinado aos parceiros que utilizam o site na modalidade Write Label,direcionando para seu endereço de comercialização no portal senha digital</p>
+         </div>
+      </div>
+      <div class="main">
+         <div class="col-md-6 col-sm-12">
+             <img class = "logo" src="logo.png">
+            <div class="login-form">
+               <form action="back.php" method="post">
+                  <div class="form-group">
+                     <label>Seu Código</label>
+                     <input type="text" class="form-control" placeholder="Código" autocomplete="off" id="id" name="id">
+                  </div>
+                  <div class="form-group">
+                     <label>Senha</label>
+                     <input type="password" class="form-control" placeholder="Senha" autocomplete="off" id="senha" name="senha">
+                  </div>
+                  <button type="submit" class="btn btn-black">Acessar</button>
+               </form>
+               <div class="voltei">
+                <a div ="voltei" href="painel-de-indicacao.html" title="" class="btn btn-secondary">
+                <span class="icon"></span> Voltar
+                </a>
+                </div>
+            </div>
+         </div>
+      </div>
+</body>
+</html>
